@@ -11,7 +11,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -19,30 +18,23 @@
     <div class="container">
         <div class="container_login">
             <h1 class="poppins-bold">Login</h1>
-            
-            <input
-            class="input"
-            placeholder="Email"
-            type="text">
 
-            <input
-            class="input"
-            placeholder="Password"
-            type="password">
+            <!-- El botón debe estar dentro del formulario -->
+            <form id="loginForm">
+                <input class="input" id="email" placeholder="Email" type="text">
+                <input class="input" id="password" placeholder="Password" type="password">
 
-            
-            <button class="button">
-                <a class="poppins-extraligh text-button" href="">Login</a>
-            </button>
+                <!-- Asegúrate de que el botón esté dentro del formulario y tenga tipo submit -->
+                <button class="button" type="submit">Login</button>
+            </form>
 
-            <span class="poppins-light span-register">Now, Don't have an account?<a class="text-a" href="">Register</a></span>
-
-
+            <span class="poppins-light span-register">Now, Don't have an account?<a class="text-a"
+                    href="">Register</a></span>
         </div>
-
     </div>
-    <script src="JS/validate.js"></script>
 
+    <!-- El archivo JS donde está la validación -->
+    <script src="JS/validate.js"></script>
 </body>
 
 </html>

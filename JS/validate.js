@@ -10,7 +10,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const validPassword = '120202';
   
     if (email === validEmail && password === validPassword) {
-        window.location.href = 'Register.html';
+        window.location.href ='Register.html';
       // Aquí puedes proceder a la acción siguiente, como redireccionar
     } else {
       alert('Correo o contraseña incorrectos');
